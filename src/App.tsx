@@ -7,19 +7,19 @@ const router = createBrowserRouter([
     element: <Week />,
   },
   {
-    path: '/day',
+    path: '/days',
     element: <Day />,
   },
   {
-    path: '/week',
+    path: '/weeks',
     element: <Week />,
   },
   {
-    path: '/month',
+    path: '/months',
     element: <Month />,
   },
   {
-    path: '/hour',
+    path: '/hours',
     element: <Hour />,
   },
 ])
