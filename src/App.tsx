@@ -132,7 +132,7 @@ function Hour() {
   }, [])
   return (
     <div className='flex min-h-[100dvh] bg-bg'>
-      <div className='flex h-[100dvh] w-[100vw] flex-col flex-wrap gap-[0.4px] p-1'>
+      <div className='flex h-[100dvh] w-[100vw] flex-col flex-wrap gap-[0.4px] p-2'>
         {lifeArray.map((isAlive, index) => (
           // <div key={index} className={`size-1 rounded-[1px] ${isAlive ? 'bg-red-500' : 'bg-accent'}`}></div>
           <div key={index} className={`size-[1px] rounded-[0.2px] ${isAlive ? 'bg-accent' : 'bg-gray-700'}`}></div>
