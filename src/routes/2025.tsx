@@ -12,7 +12,7 @@ const Year2025: React.FC = () => {
 
   const start = new Date(today > new Date(2025, 0, 1) ? today : new Date(2025, 0, 1))
   const end = new Date(2025, 11, 31)
-  const remainingDays = Math.max(0, Math.ceil((end.getTime() - start.getTime()) / (1000 * 60 * 60 * 24)) + 1)
+  const remainingDays = Math.max(0, Math.ceil((end.getTime() - start.getTime()) / (1000 * 60 * 60 * 24)) )
 
   return (
     <div className='flex min-h-[100dvh] flex-col items-center bg-bg p-8 text-white/90'>
