@@ -1,5 +1,6 @@
 import { useEffect, useMemo } from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import Year2025 from './routes/2025'
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
   {
     path: '/hours',
     element: <Hour />,
+  },
+  {
+    path: '/2025',
+    element: <Year2025 />,
   },
 ])
 
