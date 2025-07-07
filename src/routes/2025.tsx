@@ -12,17 +12,17 @@ const Year2025: React.FC = () => {
 
   const start = new Date(today > new Date(2025, 0, 1) ? today : new Date(2025, 0, 1))
   const end = new Date(2025, 11, 31)
-  const remainingDays = Math.max(0, Math.ceil((end.getTime() - start.getTime()) / (1000 * 60 * 60 * 24)) )
+  const remainingDays = Math.max(0, Math.ceil((end.getTime() - start.getTime()) / (1000 * 60 * 60 * 24)))
 
   return (
     <div className='flex min-h-[100dvh] flex-col items-center bg-bg p-8 text-white/90'>
-      <div className='py-5 sm:py-12 space-y-5 sm:space-y-8'>
+      <div className='space-y-5 py-5 sm:space-y-8 sm:py-12'>
         <h1 className='text-center text-2xl font-bold sm:text-4xl'>
           2026 mai to duniya
           <span className='px-2 text-red-500/90'>khatam</span>
           hai 💀
         </h1>
-        <div className='text-center text-lg font-semibold sm:text-2xl pb-3'>
+        <div className='pb-3 text-center text-lg font-semibold sm:text-2xl'>
           Days Remaining:
           <span className='px-1.5 font-bold text-green-500'>{remainingDays}</span>/ 365
         </div>
@@ -48,6 +48,11 @@ const Year2025: React.FC = () => {
             </div>
           )
         })}
+      </div>
+      <div className='mt-10 text-center text-sm font-semibold text-gray-400 underline sm:text-base'>
+        <a href='https://github.com/codeantu/' target='_blank'>
+          @codeAntu
+        </a>
       </div>
     </div>
   )
